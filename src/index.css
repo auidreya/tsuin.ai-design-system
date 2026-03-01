@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Antigravity Solarized Light - Teal Edition */
+    --background: 44 87% 94%;
+    --foreground: 192 10% 20%;
+
+    --card: 44 87% 94%;
+    --card-foreground: 192 10% 20%;
+
+    --popover: 44 87% 94%;
+    --popover-foreground: 192 10% 20%;
+
+    /* Primary (Teal) #2AA198 */
+    --primary: 175 59% 40%;
+    --primary-foreground: 44 87% 94%;
+
+    /* Primary Dark #207A73 */
+    --primary-dark: 175 59% 30%;
+
+    /* Primary Light #B4DEDC */
+    --primary-light: 177 36% 79%;
+
+    /* Secondary #EEE8D5 */
+    --secondary: 45 47% 89%;
+    --secondary-foreground: 192 10% 20%;
+
+    --muted: 45 30% 88%;
+    --muted-foreground: 192 10% 45%;
+
+    /* Accent (Teal Dark for sharp contrast) */
+    --accent: 175 59% 30%;
+    --accent-foreground: 44 87% 94%;
+
+    /* Destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 44 87% 94%;
+
+    --border: 45 20% 80%;
+    --input: 45 20% 80%;
+    --ring: 175 59% 40%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Tokyo Night Storm */
+    --background: 235 24% 13%;
+    --foreground: 228 35% 85%;
+
+    --card: 231 25% 16%;
+    --card-foreground: 228 35% 85%;
+
+    --popover: 231 25% 16%;
+    --popover-foreground: 228 35% 85%;
+
+    /* Primary (Blue) */
+    --primary: 221 92% 72%;
+    --primary-foreground: 235 24% 13%;
+
+    --primary-dark: 221 92% 60%;
+    --primary-light: 221 60% 25%;
+
+    /* Secondary */
+    --secondary: 231 25% 19%;
+    --secondary-foreground: 228 35% 85%;
+
+    --muted: 231 25% 22%;
+    --muted-foreground: 228 20% 55%;
+
+    /* Accent (Purple) */
+    --accent: 261 88% 79%;
+    --accent-foreground: 235 24% 13%;
+
+    /* Destructive */
+    --destructive: 0 63% 55%;
+    --destructive-foreground: 228 35% 85%;
+
+    --border: 231 15% 30%;
+    --input: 231 15% 30%;
+    --ring: 221 92% 72%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/40;
+  }
+}
