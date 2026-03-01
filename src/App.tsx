@@ -38,7 +38,7 @@ export default function App() {
   const toggleTheme = () => setTheme((t) => (t === "light" ? "dark" : "light"));
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/tsuin.ai-design-system/">
       <TooltipProvider>
         <Routes>
           <Route element={<DocsLayout theme={theme} onToggleTheme={toggleTheme} />}>
