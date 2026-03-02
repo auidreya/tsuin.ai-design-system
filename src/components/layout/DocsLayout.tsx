@@ -19,6 +19,7 @@ const pathLabels: Record<string, { breadcrumb: string; sections: { id: string; l
   "/components/checkbox": { breadcrumb: "Checkbox", sections: [{ id: "overview", label: "Overview" }, { id: "variants", label: "Variants" }, { id: "props", label: "Props" }, { id: "accessibility", label: "Accessibility" }] },
   "/components/avatar": { breadcrumb: "Avatar", sections: [{ id: "overview", label: "Overview" }, { id: "variants", label: "Variants" }, { id: "props", label: "Props" }] },
   "/components/tooltip": { breadcrumb: "Tooltip", sections: [{ id: "overview", label: "Overview" }, { id: "variants", label: "Variants" }, { id: "props", label: "Props" }, { id: "accessibility", label: "Accessibility" }] },
+  "/assets/mascot": { breadcrumb: "Mascot", sections: [{ id: "overview", label: "Overview" }, { id: "assets", label: "Assets" }, { id: "usage", label: "Usage" }] },
 };
 
 interface DocsLayoutProps {

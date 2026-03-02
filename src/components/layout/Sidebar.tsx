@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import {
   Info, Activity, Square, TextCursor, CreditCard, Tag, AlertTriangle,
   MessageSquare, List, ToggleLeft, CheckSquare, UserCircle, HelpCircle,
-  Search, Zap, Settings2,
+  Search, Zap, Settings2, Smile,
 } from "lucide-react";
 
 const navSections = [
@@ -37,6 +37,12 @@ const navSections = [
     title: "Advanced",
     items: [
       { label: "Agentic States", path: "/advanced/agentic", icon: <Zap size={14} /> },
+    ],
+  },
+  {
+    title: "Illustrations",
+    items: [
+      { label: "Mascot", path: "/assets/mascot", icon: <Smile size={14} /> },
     ],
   },
 ];

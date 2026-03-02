@@ -15,6 +15,7 @@ import { SwitchDocs } from "@/pages/components/SwitchDocs";
 import { CheckboxDocs } from "@/pages/components/CheckboxDocs";
 import { AvatarDocs } from "@/pages/components/AvatarDocs";
 import { TooltipDocs } from "@/pages/components/TooltipDocs";
+import { MascotDocs } from "@/pages/MascotDocs";
 
 type Theme = "light" | "dark";
 
@@ -55,6 +56,7 @@ export default function App() {
             <Route path="/components/checkbox" element={<CheckboxDocs />} />
             <Route path="/components/avatar" element={<AvatarDocs />} />
             <Route path="/components/tooltip" element={<TooltipDocs />} />
+            <Route path="/assets/mascot" element={<MascotDocs />} />
           </Route>
         </Routes>
       </TooltipProvider>
