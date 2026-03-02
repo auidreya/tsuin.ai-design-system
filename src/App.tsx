@@ -16,6 +16,11 @@ import { CheckboxDocs } from "@/pages/components/CheckboxDocs";
 import { AvatarDocs } from "@/pages/components/AvatarDocs";
 import { TooltipDocs } from "@/pages/components/TooltipDocs";
 import { MascotDocs } from "@/pages/MascotDocs";
+import { BrandFoundation } from "@/pages/brand/BrandFoundation";
+import { BrandLogo } from "@/pages/brand/BrandLogo";
+import { BrandTypography } from "@/pages/brand/BrandTypography";
+import { BrandColor } from "@/pages/brand/BrandColor";
+import { BrandVoice } from "@/pages/brand/BrandVoice";
 
 type Theme = "light" | "dark";
 
@@ -57,6 +62,11 @@ export default function App() {
             <Route path="/components/avatar" element={<AvatarDocs />} />
             <Route path="/components/tooltip" element={<TooltipDocs />} />
             <Route path="/assets/mascot" element={<MascotDocs />} />
+            <Route path="/brand/foundation" element={<BrandFoundation />} />
+            <Route path="/brand/logo" element={<BrandLogo />} />
+            <Route path="/brand/typography" element={<BrandTypography />} />
+            <Route path="/brand/color" element={<BrandColor />} />
+            <Route path="/brand/voice" element={<BrandVoice />} />
           </Route>
         </Routes>
       </TooltipProvider>

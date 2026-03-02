@@ -3,9 +3,9 @@ import { NavLink, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import {
-  Info, Activity, Square, TextCursor, CreditCard, Tag, AlertTriangle,
+  Info, Square, TextCursor, CreditCard, Tag, AlertTriangle,
   MessageSquare, List, ToggleLeft, CheckSquare, UserCircle, HelpCircle,
-  Search, Zap, Settings2, Smile,
+  Search, Settings2, Smile, Target, Layers, Type, Palette, Feather,
 } from "lucide-react";
 
 const navSections = [
@@ -13,7 +13,16 @@ const navSections = [
     title: "Getting Started",
     items: [
       { label: "Introduction", path: "/", icon: <Info size={14} /> },
-      { label: "Design Tokens", path: "/tokens", icon: <Activity size={14} /> },
+    ],
+  },
+  {
+    title: "Brand",
+    items: [
+      { label: "Foundation", path: "/brand/foundation", icon: <Target size={14} /> },
+      { label: "Logo System", path: "/brand/logo", icon: <Layers size={14} /> },
+      { label: "Typography", path: "/brand/typography", icon: <Type size={14} /> },
+      { label: "Color", path: "/brand/color", icon: <Palette size={14} /> },
+      { label: "Voice & Tone", path: "/brand/voice", icon: <Feather size={14} /> },
     ],
   },
   {
@@ -31,12 +40,6 @@ const navSections = [
       { label: "Checkbox", path: "/components/checkbox", icon: <CheckSquare size={14} /> },
       { label: "Avatar", path: "/components/avatar", icon: <UserCircle size={14} /> },
       { label: "Tooltip", path: "/components/tooltip", icon: <HelpCircle size={14} /> },
-    ],
-  },
-  {
-    title: "Advanced",
-    items: [
-      { label: "Agentic States", path: "/advanced/agentic", icon: <Zap size={14} /> },
     ],
   },
   {
